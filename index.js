@@ -27,8 +27,12 @@ const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
     res.render(
         "index",
-        { title: "Pug with Express", message: "Hello from Limo" }
+        { url: "/",  }
     );
+});
+
+app.get("/test", (req, res) => {
+    res.render("test");
 });
 
 app.post("/ask", async (req, res) => {

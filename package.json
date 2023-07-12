@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
+    "tailwind:build": "postcss public/styles/tailwind.css -o public/styles/style.css",
+    "tailwind:watch": "postcss public/styles/tailwind.css -w -o public/styles/style.css"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "autoprefixer": "^10.4.14",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "nodemon": "^3.0.1",
     "openai": "^3.3.0",
     "postcss": "^8.4.25",
     "postcss-cli": "^10.1.0",
